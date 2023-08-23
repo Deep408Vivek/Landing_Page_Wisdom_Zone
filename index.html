@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/abs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpoacy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navBar">
+                <div class="name">
+                    <img class="logo" src="school-logo.png" alt="">
+                      <h2>Wisdom Zone</h2>
+                      <p class="medium">English Medium School</p>
+                </div>
+                <a class="border" href="">Home</a>
+                <a class="border" href="">About Us</a>
+            <div class="list">
+                    <div class="dropdown-course">
+                        <a class="border" href="">Courses</a>
+                        <div class="drop-content">
+                            <a href="#">1 to 8th</a>
+                            <a href="#">10th</a>
+                            <a href="#">12th Mathematics</a>
+                            <a href="#">12th Biology</a>
+                            <a href="#">12th Commerce</a>
+                        </div>
+                    </div>
+            </div>
+            <a class="border" href="">Admissions</a>
+                    <a class="border" href="">Notices</a>
+                    <a class="border" href="">Contact Us</a>
+        </div>
+    </header>
+        <div class="admission">
+            <h2 style="margin-left: 500px;">Admission 2023-24</h2>
+            <hr>
+            <div class="application">
+                <h4 style="margin-left: 372px;">Details of Classes</h4>
+                <li class="adm-item">
+                    <a href="">Class 1 to 8th</a>
+                </li>
+                <li class="adm-item">
+                    <a href="">10th</a>
+                </li>
+                <li class="adm-item">
+                    <a href="">12th Mathmatics</a>
+                </li>
+                <li class="adm-item">
+                    <a href="">12th Biology</a>
+                </li>
+                <li class="adm-item">
+                    <a href="">12th Commerce</a>
+                </li>
+            </div>
+            <div class="registration">
+                <h3>Register for Admission</h3>
+                <h5>First Name : <input type="text"></h5>
+                <h5>Last Name :  <input type="text"></h5>
+                <div class="contact">
+                    <h5>Mobile No. : <input type="number" name="mobile" id="mobile" placeholder="+91 XXXXXXXXXX"></h5>
+                    <h5>E-mail : <input type="text" placeholder="xyz@gmail.com"></h5>
+                </div>
+                <div class="choice">
+                    <h5>Select Course : <select name="1 to 8th" id="">
+                        <option value="medium">1 to 8th</option>
+                        <option value="10th">10th</option>
+                        <option value="12th">12th Mathematics</option>
+                        <option value="12th">12th Biology</option>
+                        <option value="12th">12th Commerce</option>
+                    </select></h5>
+                    <!-- <button class="button-submit" type="submit">Submit</button> -->
+                    <input class="submit" type="submit" value="Submit" onclick="myFunction()">
+                    <p id="demo" style="color: rgb(55, 223, 55);"></p>
+                </div>
+            </div>
+            
+            <hr style="margin-top: 42px;">
+            <div class="entrance">
+                <h2 style="margin-left: 400px;">Entrance Registration for 9th and 11th</h2>
+                <h4 style="margin-left: 30px; margin-top: 150px;">Eligibility Criteria</h4>
+                <p><li>Should be passed with minimum 70% grade in 8th standard for admission in 9th standard.</li>
+                    <li>Should be passed with minimum 65% grade in 10th board for admission in 11th standard.</li>
+                </p>
+                <div class="eduImage">
+                    
+                    <img class="imageKids" src="edu.png" alt="">
+                    <h2 class="edu-h2">ADMISSION OPEN
+                        <p style="margin-left: 90px;">at</p>
+                        <h2 class="board">WISDOM ZONE</h2>
+                    </h2>
+                </div>
+                <div class="entrance-exam">
+                    <h5>First Name : <input type="text" id="name" name="name" required></h5>
+                    <h5>Last Name : <input type="text" id="name" name="name" required></h5>
+                    <h5>Mobile no. : <input type="number" placeholder="+91 XXXXXXXXXX"></h5>
+                    <h5>E-mail : <input type="email" id="email" name="email" placeholder="xyz@gmail.com" required></h5>
+                    <h5>Select Class :
+                    <select name="select" id="select">
+                        <option value="9th">9th</option>
+                        <option value="11th">11th</option>
+                    </select>
+                    </h5>
+                    <h5>Board : 
+                        <input type="text" name="board">
+                    </h5>
+                    <h5>Percentage % : <input type="number"></h5>
+                    <p style="margin-top: 15px; margin-left: 10px; color: darkblue;">If appliying for 11th standard please select subject!</p>
+                    <h5>Select Subject :
+                    <select >
+                        <option value="Mathematics">Mathematics</option>
+                        <option value="Biology">Biology</option>
+                        <option value="Commerce">Commerce</option>
+                    </select>
+                    </h5>
+                    <div class="upload-photo">
+                        <h5>Upload Your Latest Photo</h5>
+                        <input class="ChooseFile" type="file" id="image-upload" accept="image/*" onchange="previewImage(event)">
+                        <img class="imagePreview" id="image-preview" src="#" alt="Image Preview" style="display: none;">
+                    </div>
+                    <h5>Address : <input type="text"></h5>
+                    <h5>Pin Code : <input type="number"></h5>
+                    <h5>District : <input type="text"></h5>
+                    <h5>State : <input type="text"></h5>
+                    <!-- <button class="button-submit" type="submit" onsubmit="myFunction()">Submit</button> -->
+                    <input class="submit" type="submit" value="Submit" onclick="myFunction1()">
+                    <p id="demo1" style="color: rgb(55, 223, 55);"></p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="contact-dev">
+            <h2 style="margin-left: 580px;">Contact Us</h2>
+            <div class="contact-me">
+                <p>E-mail : vivekvddv408@gmail.com</p>
+                <p>Mobile no. 1: +91 9648376757</p>
+                <p>Mobile no. 2: +91 8960967590</p>
+                <p>Address : Mariahu Jaunpur Uttar Pradesh 222162</p>
+                <p>School Timing : 8:00 AM - 4:00 PM</p>
+            </div>
+        </div>
+        <script>
+            function previewImage(event) {
+            var input = event.target;
+            var preview = document.getElementById('image-preview');
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                preview.src = e.target.result;
+                preview.style.display = 'block';
+            };
+                reader.readAsDataURL(input.files[0]);
+            } else {
+                preview.style.display = 'none';
+            }
+        }
+        function myFunction(){
+            document.getElementById("demo").innerHTML ="Form Submitted Successfuly!";
+        }
+        function myFunction1(){
+            document.getElementById("demo1").innerHTML ="Form Submitted Successfuly!";
+        }
+
+        </script>
+</body>
+</html>
